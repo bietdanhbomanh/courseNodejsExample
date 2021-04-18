@@ -1,8 +1,8 @@
-const siteController = require("../controllers/SiteController");
-var express = require("express");
+const siteController = require('../controllers/SiteController');
+var express = require('express');
 const router = express.Router();
 
-router.use("/form", siteController.search);
-router.use("/", siteController.index);
+router.get('/form', siteController.search);
+router.get('/', siteController.index);
 
 module.exports = router;
